@@ -1,0 +1,32 @@
+{% load i18n %}
+<script type="text/html" id="hstore-row-template-{{ field_name }}" class="hstore-row-template-inline">
+    <div class="form-row field-data">
+        <div>
+            <input type="text" placeholder="{% trans 'key' %}" value="<%= key %>" style="min-width:150px;">
+            &nbsp; <strong>:</strong> &nbsp;&nbsp;
+            <input style="min-width:300px;"
+                   value="<%= _.escape(value) %>"
+                   type="text"
+                   placeholder="{% trans 'value' %}">
+            &nbsp;&nbsp;
+            <a href="#" class="remove-row" title="{% trans 'remove row' %}">
+                <img src="{{ STATIC_URL }}admin/img/icon-deletelink.svg" width="10" height="10">
+            </a>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="hstore-ui-template-{{ field_name }}"{% if '__prefix__' in field_name %} class="hstore-ui-template-inline"{% endif %}>
+    <div class="hstore" id="hstore-{{ field_name }}">
+
+    </div>
+</script>
+
+<div class="form-row">
+    <a href="#" class="hstore-toggle-txtarea" title="{% trans 'toggle textarea' %}" style="float:right">
+        <img src="{{ STATIC_URL }}admin/img/icon-changelink.svg" width="10" height="10" alt="{% trans 'toggle textarea' %}">
+        {% trans 'toggle textarea' %}
+    </a>
+</div>
+
+<script>django.jQuery(function() { initDjangoHStoreWidget('{{ field_name }}') });</script>

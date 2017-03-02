@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+javascript:
+  enabled: false
+scss:
+  config_file: scss/.scss-lint.yml
+  enabled: true
+  ignore_file: scss/_normalize.scss
+=======
+fail_on_violations: true
+
+scss:
+  enabled: false
+
+javascript:
+  enabled: true
+  config_file: js/.jshintrc
+
+jscs:
+  enabled: true
+  config_file: js/.jscsrc
+>>>>>>> 63253aba88016adb7be9a9fc4565db7ca71b59bb
