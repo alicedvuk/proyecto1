@@ -1,0 +1,26 @@
+{
+  "name": "heaven",
+  "description": "1.1",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alejandro Oropeza <alejandro.oropeza@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.3",
+    "angular": "^1.5.3",
+    "lato": "^0.3.0",
+    "tether": "^1.2.0",
+    "Swiper": "swiper#^3.3.1"
+  }
+}

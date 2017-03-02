@@ -1,0 +1,15 @@
+{
+  "paths": {
+    "docsJs": [
+      "../assets/js/vendor/anchor.min.js",
+      "../assets/js/vendor/clipboard.min.js",
+      "../assets/js/vendor/holder.min.js",
+<<<<<<< HEAD
+=======
+      "../assets/js/vendor/ZeroClipboard.min.js",
+      "../assets/js/vendor/anchor.min.js",
+>>>>>>> 63253aba88016adb7be9a9fc4565db7ca71b59bb
+      "../assets/js/src/application.js"
+    ]
+  }
+}
